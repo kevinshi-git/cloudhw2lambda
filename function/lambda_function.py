@@ -11,6 +11,7 @@ from requests_aws4auth import AWS4Auth
 ES_HOST = 'search-photos-ftjcbzutcrr3guaf6cd4upfafy.us-east-1.es.amazonaws.com'
 REGION = 'us-east-1'
 INDEX=""
+variable="hello world"
 def get_url(es_index, es_type, keyword):
     url = ES_HOST + '/' + es_index + '/' + es_type + '/_search?q=' + keyword.lower()
     return url
